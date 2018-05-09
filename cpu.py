@@ -236,4 +236,3 @@ print("-" * 25)
 
 cpu_time_b = (time.time(), psutil.cpu_times())
 print('CPU used in', cpu_time_b[0] - cpu_time_a[0], 'seconds: ',calculate(cpu_time_a[1], cpu_time_b[1]))
-print(psutil.virtual_memory())
