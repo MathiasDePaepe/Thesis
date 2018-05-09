@@ -1,3 +1,22 @@
+"""
+Copyright 2017-2018, Mathias De Paepe.
+This code is the script for objectdetection and objectavoidance when using the SURF algorithm.
+The working principle of the script is as follows:
+1) The drone takes a picture with his R200 camera.
+2) Computation of detected objects between the threshold values.
+3) Output is the taken picture with bounding boxes and the used histogram to determine the objects
+
+Tested in Python 2.7.12
+# NOTE: following packages installed:
+    - opencv: sudo apt-get install python-pip python-opencv python-opencv-apps python-zbar
+              zbar-tools vim-python-jedi vim-python-jedi python-editor eric idle vim-nox-py2
+    - numpy: sudo pip install Cython numpy
+    - pyrealsense: sudo pip install pyrealsense
+    - matplotlib: python -mpip install -U matplotlib
+Full documentation is provided in the thesis
+"Depth camera based sense and avoid for drones" of UGent
+"""
+
 ## setup logging
 import logging
 logging.basicConfig(level = logging.INFO)
