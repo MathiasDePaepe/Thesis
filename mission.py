@@ -558,10 +558,10 @@ Returns d_traveled wich is the distance that the drone has traveled from the beg
 
                 if distance1 > distance2:
                     previous_direction = 0
-                    move_left(w_real)
+                    move_left(w_real/2)
                 elif distance1 < distance2:
                     previous_direction = 1
-                    move_right(w_real)
+                    move_right(w_real/2)
                 # distance1 = distance2 so the drone swerfs in the middle of the objects
                 else:
                     pass
